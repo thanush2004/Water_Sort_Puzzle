@@ -1,0 +1,87 @@
+.B_body{
+    background-color:#272744;
+    color: white;
+    margin: -8px;
+    height: 100vh;
+}
+.B_header{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding: 40px 0px 10px 0px;
+
+}
+.underline{
+    border: 1px solid white;
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    padding-top: 1px;
+}
+.B_bottle_container{
+    display: flex;
+    flex-direction: column;
+    margin-top:5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0vh 10vh 1vh 10vh;
+    background-color: rgba(187, 184, 184, 0.2);
+    border-radius: 40px;
+    gap:20px;
+    width: max-content;
+}
+.B_bottle_container h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top:30px;
+}
+.Flex-Container{
+    display: flex;
+}
+.B_bottle_container button{
+    background-color: transparent;
+    border: none;
+}
+.options{
+    display: flex;
+    gap:15vh;
+    width: max-content;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right: auto;
+  
+}
+.options button{
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+   
+}
+.Add,.Undo,.Restart{
+    height: 25px;
+}
+.Restart{
+    transform: rotate(90deg);
+}
+.Undo,.Add{
+    margin-top: -40px;
+}
+.popup{
+    width: max-content;
+    height: max-content;
+    padding:2px 5px 0px 5px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -47px;
+    margin-left:-15px;
+    background-color: violet;
+}
+.selected-bottle {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}

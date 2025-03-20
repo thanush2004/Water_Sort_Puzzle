@@ -1,0 +1,38 @@
+.Home_container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin:-8px;
+}
+
+.Home_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; 
+    z-index: -1; 
+}
+.Home_container button{
+    padding: 0px 20px 5px 20px;
+    border: none;
+    background-color: #10169f;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    gap:20px;
+    margin-left: 43%;
+    margin-top: 60vh;
+}
+.Home_container button img{
+    height: 30px;
+    padding-top: 30px;
+}

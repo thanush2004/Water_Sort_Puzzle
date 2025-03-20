@@ -1,0 +1,77 @@
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: popOut 4s ease-out forwards;
+  }
+  .completed{
+   display: flex;
+   flex-direction: column;
+   font-size: 35px;
+   font-weight: bold;
+   text-align: center;
+   padding: 20vh 37vh 17vh 37vh;
+   margin:18vh 0% 0% 21%;
+   border-radius: 40px;
+   background-color: #3b3c6d;
+   line-height: 60px;
+   width: max-content;
+   text-transform: uppercase;
+   color: white;
+   letter-spacing: 3px;
+   
+  }
+  .flexy{
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    gap:20px;
+  }
+  .homepage,.arrow{
+    padding: 10px;
+    margin: 20px;
+    border-radius:10px;
+    border: none;
+    background-color: #d0d6ed;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .homepage:hover,.arrow:hover{
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+  .flexy button img{
+    height: 20px;
+    padding:5px 5px 0 5px;
+
+   }
+  
+  @keyframes popOut {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(var(--y-move)) translateX(var(--x-move));
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(50vh) translateX(calc(var(--x-move) * 1.5));
+      opacity: 0;
+    }
+  }
+  
